@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="../static/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="outline">
+            <div class="heading-input">
+                <h1>Customer Segmentation</h1>
+            </div>
+                <div>
+                    <form action="/predict" method="POST" class="table-content">
+                    <div class="column-1">
+                        <br><br><br>
+                        <select name="profession" id="profession" class="input" ;color: 0 0 10px rgba(0,0,0,0.3);">
+                            <option value="" disabled selected>Profession</option>
+                            <option value="9">Artist</option>
+                            <option value="8">Healthcare</option>
+                            <option value="7">Entertainment</option>
+                            <option value="6">Engineer</option>
+                            <option value="5">Doctor</option>
+                            <option value="4">Lawyer</option>
+                            <option value="3">Executive</option>
+                            <option value="2">Marketing</option>
+                            <option value="1">Homemaker</option>
+                        </select>
+                        <select name="Graduated" id="Graduated" class="input">
+                            <option value="" disabled selected>Graduated</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                        <input type="number" step="any" name="Age" id="Age" placeholder="  Age" class="input">
+                        <select name="Ever_Married" id="Ever_Married" placeholder="Ever Married" class="input">
+                            <option value="" disabled selected>Ever Married</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                        <select name="Gender" id="Gender" class="input">
+                            <option value="" disabled selected>Gender</option>
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
+                    <div class="column-2">
+                        <input type="number" step="any" name="Work_Experience" id="Work_Experience" placeholder="Work Experience" class="input">
+                        <select name="Spending_Score" id="Spending_Score" placeholder=""Spending Score class="input">
+                            <option value="" disabled selected>Spending Score</option>
+                            <option value="1">Low</option>
+                            <option value="2">Average</option>
+                            <option value="3">High</option>
+                        </select>
+                        <input type="number" step="any" name="Family_Size" id="Family_Size" placeholder="Family Size" class="input">
+                        <select name="Var 1" id="Var 1" class="input">
+                            <option value="" disabled selected>Var 1</option>
+                            <option value="1">Cat 1</option>
+                            <option value="2">Cat 2</option>
+                            <option value="3">Cat 3</option>
+                            <option value="4">Cat 4</option>
+                            <option value="5">Cat 5</option>
+                            <option value="6">Cat 6</option>
+                            <option value="7">Cat 7</option>
+                        </select>  
+                        <br><br>
+                        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>      
+                </div>
+            </form>
+            </div>
+            <P style=" position: relative; left: 190px; top: 20px;">{{prediction}}</p>
+            <br>
+        </form>
+        </div>
+        <div>
+            <footer style="text-align:center" class="footer">
+              <hr>
+              <p class="footer-text">Created by Darren Carvalho</p>
+              
+              <a href="https://github.com/DarrenCarvalho/Habitable-Exoplanets" target="blank" style="color: black; padding-right: 5px;"><i class="fa fa-github" style="font-size:36px"></i></a>
+              <a href="https://www.linkedin.com/in/darren-carvalho-862b78187/" target="blank" style="color: black; padding-left: 5px;"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
+            
+            </footer>
+          </div>
+    </body>
+</html>
+
+<!-- ../static/css/
+../images/planet -->
